@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mauiPopup:BasePopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mauiPopup="clr-namespace:MauiPopup.Views;assembly=MauiPopup"
+             x:Class="MauiPopupDemo.PopupPage"
+             Title="PopupPage">
+
+        <VerticalStackLayout Padding="10" Spacing="10">
+            <Image Source="dotnet_bot.png" HeightRequest="100" />
+            <Label Text="Hello World" FontSize="32" />
+
+
+        <Label Text="Navigate To Other Popup Page?" />
+
+        <Grid RowDefinitions="Auto" ColumnSpacing="10" ColumnDefinitions="50*,50*"> 
+            <Button Text="Yes" x:Name="btnYes" Clicked="btnYes_Clicked" Grid.Column="0"  />
+            <Button Text="No" x:Name="btnNo" Clicked="btnNo_Clicked" Grid.Column="1" BackgroundColor="Red" />
+        </Grid>
+
+    </VerticalStackLayout>
+</mauiPopup:BasePopupPage>
